@@ -20,7 +20,7 @@ spec:
         image: quay.io/drsylent/cubix/block4/optional-frontend:springboot3
         env:
         - name: BACKEND_URL
-          value: http://backend.op4-kube-backend:8081
+          value: http://backend.op4-kube-backend:8080
         ports:
         - containerPort: 8080
           name: web

@@ -3,8 +3,9 @@ kind: Service
 metadata:
   name: frontend
   namespace: op4-kube-frontend
-  labels:
-    app: frontend
+  # optional
+  # labels:
+  #   app: frontend
 spec:
   selector:
     app: frontend

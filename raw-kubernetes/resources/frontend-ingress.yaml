@@ -3,8 +3,9 @@ kind: Ingress
 metadata:
   name: frontend
   namespace: op4-kube-frontend
-  labels:
-    app: frontend
+  # optional
+  # labels:
+  #   app: frontend
 spec:
   rules:
   - host: application.cubix.localhost
