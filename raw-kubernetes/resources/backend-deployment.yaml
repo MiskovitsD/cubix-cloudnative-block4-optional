@@ -3,9 +3,17 @@ kind: Deployment
 metadata:
   name: backend
   namespace: op4-kube-backend
+  labels:
+    app: backend
 spec:
   replicas: 1
+  selector:
+    matchLabels:
+      app: backend
   template:
+    metadata:
+      labels:
+        app: backend
     spec:
       containers:
       - name: backend
