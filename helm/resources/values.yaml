@@ -1,0 +1,18 @@
+env:
+- name: FRONTEND_DEFAULT_MESSAGE
+  value: "overwritten value"
+
+image:
+  repository: quay.io/drsylent/cubix/block4/optional-frontend
+  tag: "springboot3"
+
+service:
+  port: 8080
+
+ingress:
+  enabled: true
+  hosts:
+    - host: application.cubix.localhost
+      paths:
+        - path: /frontend
+          pathType: Prefix
